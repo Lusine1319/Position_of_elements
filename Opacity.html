@@ -1,0 +1,55 @@
+<<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/html">
+<head>
+    <meta charset="UTF-8">
+    <title>Div position relative</title>
+    <style type="text/css">
+        div
+        {
+            border: 1px solid black;
+            width: 150px;
+            height: 150px;
+            position: absolute;
+        }
+        #greenblock
+        {
+            top: 5px;
+            left: 12px;
+            background-color: green;
+        }
+        #yellowblock
+        {
+            z-index: 3;
+            opacity: 0.4;
+            left: 12px;
+            top: 5px;
+            background-color: yellow;
+        }
+        .whiteblock
+        {
+            margin: 15px;
+            background-color: #fff;
+        }
+        .blueblock
+        {
+            width: 150px;
+            height: 150px;
+            background-color: blue;
+        }
+    </style>
+</head>
+<body>
+<div class="whiteblock">
+    <div id="greenblock">
+        <p style="margin: 25px">In its place</p>
+    </div>
+</div>
+<div class="blueblock"></div>
+<div id="yellowblock">
+    <p style="margin: 25px">Top 5px;</br>left 120px</p>
+</div>
+<div class="whiteblock">
+    <p style="margin: 25px">Top 30px;</br>left 130px</p>
+</div>
+</body>
+</html>

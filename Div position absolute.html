@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Div position absolute</title>
+    <style type="text/css">
+        div
+        {
+            border: 1px solid black;
+            width: 150px;
+            height: 150px;
+            margin: 15px;
+            position: absolute;
+        }
+        #greenblock
+        {
+            z-index: 3;
+            top: 50px;
+            left: 30px;
+            background-color: green;
+        }
+        #redblock
+        {
+            z-index: 2;
+            top: 20px;
+            left: 20px;
+            background-color: red;
+        }
+        #yellowblock
+        {
+            z-index: 1;
+            background-color: yellow;
+        }
+    </style>
+</head>
+<body>
+<div id="greenblock"></div>
+<div id="redblock"></div>
+<div id="yellowblock"></div>
+</body>
+</html>
